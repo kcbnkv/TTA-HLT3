@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>KCBNKV</title>
-    <link rel="icon" href="logo.JPG" type="image/jpg">
+    <title>KCBNKV REGISTER</title>
+    <link rel="icon" href="logo.png" type="image/jpg">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body oncontextmenu="return false"> 
   <header class="navigation-bar">
     <ul>
       <li><a href="Home1.html">HOME</a></li>
       <li><a href="About.html">ABOUT</a></li>
       <li><a href="Projects.html">PROJECTS</a></li>
-      <li><a href="login.html">LOGIN</a></li>
+      <div class="navigation-bar-right">
+        <li><a href="login.html">LOGIN</a></li>
+      </div>
     </ul>
   </header>
 
   <main>
-    <div class="form">
+    <div id="rcontainer">
         <form>
           <label class="label">USER REGISTRATION</label><br>
           <table>
@@ -53,7 +55,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td>Select Course</td>
+                <td><p>Select Course</p></td>
                 <td>
                     <input type="checkbox" name="course" value="web-dev">Web Dev<br>
                     <input type="checkbox" name="course" value="python">Python<br>
@@ -61,7 +63,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td>Choose Certificate</td>
+                <td><p>Choose Certificate</p></td>
                 <td>
                     <select name="certificate-choice">
                     <option value="ocjp">OCJP</option>
@@ -72,7 +74,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td>Choose City</td>
+                <td><p>Choose City</p></td>
                 <td>
                     <input list="city">
                     <datalist id="city">
@@ -90,7 +92,7 @@
                 </tr>
                 <tr>
                 <td colspan="2">
-                    <a class="ar" href="login.html" class="button"> ALREADY REGISTERED CLICK HERE</a>
+                    <a class="ar" href="login.html" type="button"> ALREADY REGISTERED CLICK HERE</a>
                 </td>
                 </tr>
           </table>
@@ -100,11 +102,17 @@
   
   <footer>
     <ul class="footnote">
-      <li><a href="https://www.facebook.com/kcabanikova" class="fa fa-facebook" target="_blank"></a></li>
-      <li><a href="https://www.instagram.com/kcbnkv/?hl=en" class="fa fa-instagram"target="_blank"></a></li>
-      <li><a href='https://uk.linkedin.com/in/cbnkv' class="fa fa-linkedin"target="_blank"></a></li>
-      <li><a href="https://github.com/kcbnkv" class="fa fa-github"target="_blank"></a></li>
+        <li><a href="https://www.facebook.com/kcabanikova" class="fa fa-facebook" target="_blank"></a></li>
+        <li><a href="https://www.instagram.com/kcbnkv/?hl=en" class="fa fa-instagram"target="_blank"></a></li>
+        <li><a href='https://uk.linkedin.com/in/cbnkv' class="fa fa-linkedin"target="_blank"></a></li>
+        <li><a href="https://github.com/kcbnkv" class="fa fa-github"target="_blank"></a></li>
+        <div class="footer-right">
+          <li id="time"></li>
+        </div>
     </ul>
   </footer>
+
+  <script src="./js_login.js"></script> 
+
 </body>
 </html>
